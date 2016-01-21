@@ -3,34 +3,17 @@
 #### Table of Contents
 
 1. [Overview](#overview)
-2. [Setup - The basics of getting started with dotdeb](#setup)
-    * [What dotdeb affects](#what-hostname-does)
-    * [Setup requirements](#requirements)
-    * [Beginning with dotdeb](#beginning-with-hostname)
-3. [Usage - Configuration options and additional functionality](#usage)
-5. [Reference - An under-the-hood peek at what the module is doing and how](#reference)
-5. [Limitations - OS compatibility, etc.](#limitations)
-6. [Development - Guide for contributing to the module](#development)
+2. [Usage](#usage)
+5. [Reference](#reference)
+5. [Limitations](#limitations)
 
 ## Overview
 
-Configure a Debian based OS hostname.
-Tested on Debian 8 using Puppet 3.7.
-
-## Setup
-
-### What hostname does
+Configure a Debian based OS hostname :
 
 * Generate hostname
 * Modify the /etc/hostname file content
 * Make sure the /etc/hosts file has the related entry
-
-### Requirements
-
-* Debian based OS.
-* Puppet >= 3.3.
-
-### Beginning with hostname
 
 ## Usage
 
@@ -62,4 +45,6 @@ $domain = undef
 
 ## Limitations
 
-Should work on any Debian based OS. (Debian, Ubuntu...)
+Tested on Debian 8 using Puppet 3.7.
+Should work on any Debian and Ubuntu based OS.
+Puppet >= 3.3 required.
