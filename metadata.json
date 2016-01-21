@@ -1,0 +1,12 @@
+{
+  "name": "hostname",
+  "version": "0.1.0",
+  "author": "loispuig",
+  "summary": "Configure a Debian hostname",
+  "license": "MIT",
+  "source": "https://github.com/loispuig/puppet-hostname",
+  "project_page": null,
+  "issues_url": "https://github.com/loispuig/puppet-hostname/issues",
+  "dependencies": []
+}
+
