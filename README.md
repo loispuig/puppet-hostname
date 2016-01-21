@@ -39,9 +39,9 @@ $domain = undef
 
 ## Reference
 
-* manifests/init.pp : Initiate the module, includes parameters and starts the config script.
+* manifests/init.pp : Initiates the module, includes parameters and starts the config script.
 * manifests/params.pp : Defines used parameters and related default values.
-* manifests/config.pp : Configure hostname.
+* manifests/config.pp : Configures hostname.
 
 ## Limitations
 
