@@ -45,6 +45,6 @@ $domain = undef
 
 ## Limitations
 
-Tested on Debian 8 using Puppet 3.7.
-Should work on any Debian and Ubuntu based OS.
+Tested on Debian 8 using Puppet 3.7.  
+Should work on any Debian and Ubuntu based OS.  
 Puppet >= 3.3 required.
