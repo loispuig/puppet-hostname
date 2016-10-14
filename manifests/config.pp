@@ -7,16 +7,18 @@ class hostname::config inherits hostname {
 		$fqdn = $hostname
 	}
 
-	# Modify the /etc/hostname file content
-	file { '/etc/hostname':
-		ensure  => present,
-		content => "$fqdn\n",
-		notify  => Exec['set-hostname'],
-	}
+	if ($is_virtual == true) {
+		# Modify the /etc/hostname file content
+		file { '/etc/hostname':
+			ensure  => present,
+			content => "$fqdn\n",
+			notify  => Exec['set-hostname'],
+		}
 
-	#exec { 'set-hostname':
-	#	command => '/bin/hostname -F /etc/hostname',
-	#}
+		exec { 'set-hostname':
+			command => '/bin/hostname -F /etc/hostname',
+		}
+	}
 
 	# Make sure the hosts file has an entry
 	host { $hostname:
