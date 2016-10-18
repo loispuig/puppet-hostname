@@ -7,7 +7,7 @@ class hostname::config inherits hostname {
 		$fqdn = $hostname
 	}
 
-	if str2bool("$is_virtual") {
+	if str2bool("$is_virtual") == false {
 		# Modify the /etc/hostname file content
 		file { '/etc/hostname':
 			ensure  => present,
